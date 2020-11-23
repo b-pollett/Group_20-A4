@@ -1,26 +1,22 @@
 
 /**
- * Write a description of class team here.
+ * Write a description of class divisions here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class team
+public class division
 {
     // instance variables - replace the example below with your own
-    private string n;
-    private int PLAYER;
-    private int COACH;
+    private int x;
 
     /**
-     * Constructor for objects of class team
+     * Constructor for objects of class divisions
      */
-    public team(n)
+    public division()
     {
         // initialise instance variables
-        name = n;
-        PLAYER = 12;
-        COACH = 2;
+        x = 0;
     }
 
     /**
