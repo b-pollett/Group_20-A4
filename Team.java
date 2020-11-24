@@ -11,6 +11,8 @@ public class Team
     private String name;
     private int PLAY;
     private int COACH;
+    private int set_pts;
+    private int pts_diff;
    
     /**
      * Constructor for objects of class Team
@@ -21,5 +23,7 @@ public class Team
         this.name = name;
         this.PLAY = 12;
         this.COACH = 2;
+        this.set_pts = 0;
+        this.pts_diff = 0;
     }
 }

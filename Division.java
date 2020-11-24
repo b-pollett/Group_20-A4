@@ -8,14 +8,14 @@
 public class Division
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private String name;
 
     /**
      * Constructor for objects of class Division
      */
-    public Division()
+    public Division(String name)
     {
         // initialise instance variables
-        x = 0;
+        this.name = name;
     }
 }
