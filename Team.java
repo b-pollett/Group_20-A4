@@ -1,13 +1,14 @@
 
 /**
- * Write a description of class Team here.
+ * Team class, used to hold name of team and different points
+ * from matches.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @Bernard Pollett
+ * @v20201124
  */
 public class Team
 {
-    // instance variables - replace the example below with your own
+    // instance variables
     private String name;
     private int PLAY;
     private int COACH;
@@ -16,6 +17,7 @@ public class Team
    
     /**
      * Constructor for objects of class Team
+     * sets name, players, coaches, set_pts, and pts_diff.
      */
     public Team(String name)
     {
@@ -25,5 +27,39 @@ public class Team
         this.COACH = 2;
         this.set_pts = 0;
         this.pts_diff = 0;
+    }
+    
+    /**
+     * Method to pull the teams name
+     */
+    public String getName()
+    {
+        return name;
+    }
+    
+    /**
+     * Method to pull the teams points from matches and sets.
+     */
+    public int getPts()
+    {
+        return set_pts;
+    }
+    
+    /**
+     * Method to pull the teams total points difference from games.
+     */
+    public int getDiff()
+    {
+        return pts_diff;
+    }
+    
+    /**
+     * Method to pull the teams name
+     */
+    public String ShowInfo()
+    {
+        return "Team Name: " + name + 
+        "\nNumber of Players: " + PLAY +
+        "\nNumber of Coaches: " + COACH;
     }
 }
