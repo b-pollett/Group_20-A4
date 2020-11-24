@@ -20,16 +20,15 @@ public class Division
     {
         // initialise instance variables
         this.name = name;
-        ArrayList<Team> teams = new ArrayList<>();
+        this.teams = new ArrayList<>();
     }
     
     /**
-     * Constructor for objects of class Division, used mainly to give the
-     * Division a name and create array to place teams in.
+     * Method to add teams to the divisions ArrayList
      */
     public void addTeam(Team team)
     {
-        if (teams.size() != 5){teams.add(team);}
+        if (teams.size() != 5){this.teams.add(team);}
         else {throw new java.lang.Error("Division is full");}
     }
 }

@@ -5,7 +5,7 @@
 
 //Involves the concept of nested class and hashmap.
 
-class Volleyball_league {
+public class Volleyball_league {
 int num;
 String divisions[];
   // inner class
