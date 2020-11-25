@@ -32,6 +32,9 @@ public void put_Divisions_details() {
 // function to add the name of 3 divisions to the member divisions[]
 
 }
+
+
+
 Teams tobj[];
 Hashmap<String,Teams[]> h1=new Hashmap<String,Teams[] >();
    public void add_team(Teams obj, String dn) {

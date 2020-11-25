@@ -89,4 +89,33 @@ public class Division
                 }
         }
     }
+    /**
+     * 
+     */
+    public void calculateStandings()
+    {
+       ArrayList<Team> copy = new ArrayList<>(this.teams);
+       int i = 1;
+       System.out.println("Rankings \n");
+       while (i<=5)
+       {
+           Team maxpts = copy.get(0);
+           int j=0;
+           for(Team temp : copy)
+           {
+                if (temp.getPts() > maxpts.getPts())
+               {
+                   maxpts = temp;
+               }
+               else if (temp.getPts() == maxpts.getPts())
+               {
+                   if (temp.getDiff() > maxpts.getDiff()){ maxpts = temp;}
+               }
+               j++;
+           }
+           System.out.println(i+"st Place: " + maxpts.getName());
+           copy.remove(j);
+           i++;
+       }
+    }
 }
