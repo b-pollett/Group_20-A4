@@ -7,8 +7,9 @@ Contribution: - Team/Division constructors
               
 Author: Mehul Kapoor
 Contribution: - calculateStandings Method in Division
+              - main class and leaguesetup method
 
 Author: Hayal Desta
-Contribution: Volleyball_league class
+Contribution: main class
 
 
