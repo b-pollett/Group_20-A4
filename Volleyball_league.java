@@ -48,9 +48,9 @@ void leagueSetup(required_division_passed) {
 // create team
 Teams t1 = new Teams();
 t1.get_team_details();
-t1.put_team_details
+t1.put_team_details();
 // show division
-put_Divisions_details()
+put_Divisions_details();
 
 //link team to division
 add_team(t1,required_division_passed);
@@ -72,7 +72,7 @@ outer.put_Divisions_details();
 
 // to add a tem and link to a division
 
-outer.leagueSetup(required_division_passed)
+outer.leagueSetup(required_division_passed);
 
 
 }
