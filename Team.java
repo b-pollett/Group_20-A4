@@ -12,8 +12,8 @@ public class Team
     private String name;
     private int PLAY;
     private int COACH;
-    private int set_pts;
-    private int pts_diff;
+    public int set_pts;
+    public int pts_diff;
    
     /**
      * Constructor for objects of class Team
@@ -51,6 +51,14 @@ public class Team
     public int getDiff()
     {
         return pts_diff;
+    }
+    
+    /**
+     * Method to add points to the set scores for standings.
+     */
+    public void addSet()
+    {
+        this.set_pts++;
     }
     
     /**
