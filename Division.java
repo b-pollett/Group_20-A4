@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 import java.util.Scanner;
 /**
  * Division class to hold a set of 5 teams and compare their points 
@@ -31,8 +31,17 @@ public class Division
      */
     public void addTeam(Team team)
     {
-        if (teams.size() != 5){this.teams.add(team);}
+        if (teams.size() != 5){this.teams.add(team);
+        System.out.println(team.getName());}
         else {throw new java.lang.Error("Division is full");}
+    }
+    
+    /**
+     * returns name for the division.
+     */
+    public String getName()
+    {
+        return this.name;
     }
     
     /**
@@ -90,32 +99,33 @@ public class Division
         }
     }
     /**
-     * 
+     * method that calculats standing and prints the standings.
      */
     public void calculateStandings()
     {
        ArrayList<Team> copy = new ArrayList<>(this.teams);
        int i = 1;
-       System.out.println("Rankings \n");
        while (i<=5)
        {
            Team maxpts = copy.get(0);
            int j=0;
-           for(Team temp : copy)
-           {
-                if (temp.getPts() > maxpts.getPts())
-               {
-                   maxpts = temp;
-               }
-               else if (temp.getPts() == maxpts.getPts())
-               {
-                   if (temp.getDiff() > maxpts.getDiff()){ maxpts = temp;}
-               }
-               j++;
-           }
+           for (Team temp: teams)
+            if (temp.getPts() > maxpts.getPts())
+            {
+                this.t1 = temp;
+            }
+            else if(temp.getPts() == maxpts.getPts())
+            {
+                if (temp.getDiff() > maxpts.getDiff())
+                {
+                    this.t1 = temp;
+                }
+            }
+            j++;
            System.out.println(i+"st Place: " + maxpts.getName());
-           copy.remove(j);
+           copy.remove(j-1);
            i++;
        }
+       System.out.println("\n");
     }
 }
